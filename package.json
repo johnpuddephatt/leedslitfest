@@ -1,0 +1,22 @@
+{
+  "name": "stripe-gradient",
+  "version": "1.0.0",
+  "description": "",
+  "main": "stripe-gradient.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "canvas-mesh-gradient": "^1.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.11"
+  }
+}
