@@ -20,16 +20,16 @@ let start = function () {
 
   const bodies = [
     // mass, rMajor, rMinor, focusDist, color, start%
-    new OrbitingBody(10, 300, 305, 10, "0,121,207", 0.15),
-    new OrbitingBody(10, 380, 320, 10, "0,121,207", 0.35),
-    new OrbitingBody(10, 320, 300, 10, "0,121,207", 0.65),
-    new OrbitingBody(10, 550, 470, -10, "0,121,207", 0.75),
-    new OrbitingBody(25, 350, 275, 10, "255,124,231", 0.56),
-    new OrbitingBody(25, 350, 350, 10, "255,124,231", 0.96),
-    new OrbitingBody(15, 380, 320, -10, "255,124,231", 0.28),
-    new OrbitingBody(25, 400, 340, 10, "255,124,231", 0.1),
-    new OrbitingBody(20, 450, 380, 10, "255,255,255", 0.2),
-    new OrbitingBody(25, 500, 420, 10, "255,255,255", 0.65),
+    new OrbitingBody(10, 0.4, 0.4, 10, "0,121,207", 0.15),
+    new OrbitingBody(10, 0.5, 0.4, 10, "0,121,207", 0.35),
+    new OrbitingBody(10, 0.4, 0.4, 10, "0,121,207", 0.65),
+    new OrbitingBody(10, 0.8, 0.7, -10, "0,121,207", 0.75),
+    new OrbitingBody(25, 0.5, 0.4, 10, "255,124,231", 0.56),
+    new OrbitingBody(25, 0.5, 0.5, 10, "255,124,231", 0.96),
+    new OrbitingBody(15, 0.5, 0.4, -10, "255,124,231", 0.28),
+    new OrbitingBody(25, 0.6, 0.5, 10, "255,124,231", 0.1),
+    new OrbitingBody(20, 0.6, 0.5, 10, "255,255,255", 0.2),
+    new OrbitingBody(25, 0.7, 0.6, 10, "255,255,255", 0.65),
     // new OrbitingBody(25, 600, 490, 10, "255,124,231", 0.72),
     // new OrbitingBody(30, 650, 550, -20, "255,255,255", 0.88),
     // new OrbitingBody(20, 700, 480, -20, "255,255,255", 0.68),
@@ -71,5 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("halo").classList.remove("opacity-0");
   document.getElementById("orbits").classList.remove("opacity-0");
   document.getElementById("fallback").classList.remove("opacity-0");
+  document.getElementById("content").classList.remove("opacity-0");
   start();
 });
