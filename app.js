@@ -20,16 +20,16 @@ let start = function () {
 
   const bodies = [
     // mass, rMajor, rMinor, focusDist, color, start%
-    new OrbitingBody(10, 300, 305, 10, "0,121,207", 0.2),
-    new OrbitingBody(25, 350, 275, 10, "255,124,231", 0.56),
-    new OrbitingBody(10, 380, 320, 10, "0,121,207", 0.08),
-    new OrbitingBody(25, 350, 350, 10, "255,124,231", 0.96),
+    new OrbitingBody(10, 300, 305, 10, "0,121,207", 0.15),
+    new OrbitingBody(10, 380, 320, 10, "0,121,207", 0.35),
     new OrbitingBody(10, 320, 300, 10, "0,121,207", 0.5),
+    new OrbitingBody(10, 550, 470, -10, "0,121,207", 0.75),
+    new OrbitingBody(25, 350, 275, 10, "255,124,231", 0.56),
+    new OrbitingBody(25, 350, 350, 10, "255,124,231", 0.96),
     new OrbitingBody(15, 380, 320, -10, "255,124,231", 0.28),
     new OrbitingBody(25, 400, 340, 10, "255,124,231", 0.1),
     new OrbitingBody(20, 450, 380, 10, "255,255,255", 0.32),
     new OrbitingBody(25, 500, 420, 10, "255,255,255", 0.25),
-    new OrbitingBody(10, 550, 470, -10, "0,121,207", 0.48),
     // new OrbitingBody(25, 600, 490, 10, "255,124,231", 0.72),
     // new OrbitingBody(30, 650, 550, -20, "255,255,255", 0.88),
     // new OrbitingBody(20, 700, 480, -20, "255,255,255", 0.68),
