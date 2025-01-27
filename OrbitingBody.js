@@ -13,7 +13,7 @@ export class OrbitingBody {
     this.velX = 0;
     this.gravParam = mass;
     this.orbitalPeriod = (2 * Math.PI * rMajor ** 1.5) / this.gravParam ** 0.5;
-    this.deltaTime = this.orbitalPeriod / 1000;
+    this.deltaTime = this.orbitalPeriod / 1500;
   }
 
   updatePosition() {
