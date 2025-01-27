@@ -72,5 +72,8 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("orbits").classList.remove("opacity-0");
   document.getElementById("fallback").classList.remove("opacity-0");
   document.getElementById("content").classList.remove("opacity-0");
-  start();
+
+  setTimeout(() => {
+    start();
+  }, 2000);
 });

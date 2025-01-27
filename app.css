@@ -1,16 +1,21 @@
 @import "tailwindcss";
 
 @font-face {
-    font-family: 'LLF-sans';
-    src: url(./LLF-sans.woff2) format('woff2');
+  font-family: "LLF-sans";
+  src: url(./LLF-sans.woff2) format("woff2");
 }
 
 @font-face {
-    font-family: 'LLF-serif';
-    src: url(./LLF-serif.woff2) format('woff2');
+  font-family: "LLF-serif";
+  src: url(./LLF-serif.woff2) format("woff2");
 }
 
 @theme {
-  --font-sans: "LLF-sans", "sans-serif"; 
-    --font-serif: "LLF-serif", "serif";
+  --font-sans: "LLF-sans", "sans-serif";
+  --font-serif: "LLF-serif", "serif";
+}
+
+.h-screen {
+  height: 100vh;
+  height: 100svh;
 }
