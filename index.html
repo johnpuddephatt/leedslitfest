@@ -3,20 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leeds Lit Fest 2025</title>
+    <title>Leeds Lit Fest | 2025</title>
+    <meta
+      name="description"
+      content="Festival of words & thought. Bringing some of the world’s best writing together in the city of Leeds."
+    />
     <meta name="robots" content="noindex" />
+    <meta name="og:image" content="/opengraph.jpg" />
+
     <link href="app.css" rel="stylesheet" />
     <script type="module" src="app.js"></script>
   </head>
   <body
     class="h-screen bg-black w-screen flex flex-col items-center justify-center"
   >
+    <img
+      src="/bg.jpg"
+      id="fallback"
+      class="-z-10 opacity-0 transition-opacity duration-[3000ms] delay-1000 fixed inset-0 w-full h-full object-cover"
+      loading="lazy"
+    />
     <canvas
-      class="-z-10 opacity-0 duration-[3000ms] delay-1000 fixed h-screen w-screen"
+      class="-z-10 opacity-0 transition-opacity duration-[3000ms] delay-1000 fixed h-screen w-screen"
       id="gradient"
     ></canvas>
     <canvas
-      class="fixed opacity-0 duration-[10000ms] delay-[2000ms] h-screen w-screen"
+      class="fixed opacity-0 transition-opacity duration-[10000ms] delay-[2000ms] h-screen w-screen"
       id="orbits"
     ></canvas>
 
@@ -26,13 +38,12 @@
     ></div>
     <div class="relative flex flex-col items-center justify-center">
       <svg
-        class="relative mb-12 w-40 h-auto"
+        class="relative mb-12 w-24 md:w-40 h-auto"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 148.24 215.43"
       >
         <path
           d="m39.87 80.53 3.48-.84v17.34l10.1-2.43v3.09l-13.57 3.26V80.52ZM56.38 76.56l14.3-3.44v3.09l-10.82 2.6v5.35l10.01-2.41v2.92l-10.01 2.41v5.98l11.02-2.65v3.09l-14.49 3.48V76.55ZM74.47 72.22l14.3-3.44v3.09l-10.82 2.6v5.35l10.01-2.41v2.92l-10.01 2.41v5.98l11.02-2.65v3.09l-14.49 3.48V72.21ZM92.53 67.88l8.23-1.98c6.12-1.47 8.76 2.47 8.76 8.11s-2.64 10.85-8.76 12.32l-8.23 1.98V67.88Zm3.48 16.67 3.42-.82c5.45-1.31 6.62-4.79 6.62-8.89s-1.17-7.02-6.62-5.71l-3.42.82v14.59ZM115.48 75.99c0 3.15 2.25 3.84 5.03 3.17 3.06-.73 4.2-2.55 4.2-4.1s-.83-2-1.64-2.12c-1.39-.21-3.2-.15-5.92-.26-3.39-.13-4.4-2.01-4.4-4.12 0-4.09 3.67-6.89 7.26-7.75 4.15-1 7.62.43 7.62 4.69l-3.48.84c-.17-2.59-1.89-3.15-4.28-2.58-1.61.39-3.64 1.48-3.64 3.54 0 1.43.95 2 2.36 2.06.31.01 4.7.13 5.73.2 2.61.17 3.87 2.16 3.87 4.28 0 4.58-3.95 7.36-7.9 8.31-4.53 1.09-8.21-.26-8.29-5.3l3.48-.84ZM39.87 110.74l3.48-.84v17.34l10.1-2.43v3.09l-13.57 3.26v-20.43ZM56.37 106.77l3.48-.84v20.43l-3.48.84v-20.43ZM62.79 105.23l16.08-3.86v3.09l-6.31 1.52v17.34l-3.48.84v-17.34l-6.29 1.51v-3.09ZM37.58 142.07l13.71-3.29v3.09l-10.24 2.46v5.35l8.98-2.16v2.92l-8.98 2.16v9.07l-3.48.84v-20.43ZM54.63 137.98l14.3-3.44v3.09l-10.82 2.6v5.35l10.01-2.41v2.92l-10.01 2.41v5.98l11.02-2.65v3.09l-14.49 3.48v-20.43ZM75.02 146.7c0 3.15 2.25 3.84 5.03 3.17 3.06-.73 4.2-2.55 4.2-4.1s-.83-2-1.64-2.12c-1.39-.21-3.2-.15-5.93-.26-3.39-.13-4.4-2.01-4.4-4.12 0-4.09 3.67-6.89 7.26-7.75 4.14-1 7.62.43 7.62 4.69l-3.48.84c-.17-2.59-1.89-3.15-4.28-2.58-1.61.39-3.64 1.48-3.64 3.54 0 1.43.95 2 2.36 2.06.31.01 4.7.13 5.73.2 2.61.17 3.87 2.16 3.87 4.28 0 4.58-3.95 7.36-7.9 8.31-4.53 1.09-8.21-.26-8.29-5.3l3.48-.84ZM89.41 129.62l16.08-3.86v3.09l-6.31 1.52v17.34l-3.48.84v-17.34l-6.29 1.51v-3.09ZM52.14 188.11l-13.3 3.19c.03-3.3 1.67-6.18 4.28-8.61 2.53-2.5 5.81-4.86 5.87-7.99.03-1.44-.56-3.41-3.28-2.76-2.5.6-3.25 2.98-3.34 5.81l-3.17.76c0-4.43 2.36-8.29 6.7-9.34 4.76-1.14 6.26 2.07 6.26 4.65 0 3.18-2.11 5.66-4.34 7.79-2.25 2.14-4.62 3.94-5.17 5.85l9.49-2.28v2.92ZM68.23 174.23c0 4.55-1.14 10.69-6.73 12.03-5.59 1.34-6.73-4.25-6.73-8.8s1.14-10.69 6.73-12.03c5.59-1.34 6.73 4.25 6.73 8.8Zm-3.18.76c0-4.18-.78-7.51-3.56-6.84-2.78.67-3.56 4.37-3.56 8.55s.78 7.51 3.56 6.84 3.56-4.37 3.56-8.55ZM84.17 180.41l-13.3 3.19c.03-3.3 1.67-6.18 4.28-8.61 2.53-2.5 5.81-4.86 5.87-7.99.03-1.44-.56-3.41-3.28-2.76-2.5.6-3.25 2.98-3.34 5.81l-3.17.76c0-4.43 2.36-8.29 6.7-9.34 4.76-1.14 6.26 2.07 6.26 4.65 0 3.18-2.11 5.66-4.34 7.79-2.25 2.14-4.62 3.94-5.17 5.85l9.49-2.28v2.92ZM89.25 159.17l10.07-2.42v2.92l-7.71 1.85-1 5.33.05.04c.86-1.18 2.28-2.06 3.59-2.38 3.87-.93 6.09 1.4 6.09 5.23 0 3.2-1.95 7.65-6.73 8.8-3.76.9-6.68-.48-6.82-4.46l3.17-.76c.2 2.1 1.53 3.01 3.59 2.51 2.7-.65 3.62-2.84 3.62-5.27 0-2.2-1.14-3.9-3.7-3.29-1.33.32-2.64 1.06-3.14 2.59l-3.17.76 2.09-11.46Z"
-          class="prefix__cls-2"
         />
         <g
           fill="none"
@@ -51,8 +62,10 @@
         </g>
       </svg>
 
-      <h1 class="text-2xl lg:text-4xl lg:mb-4 text-center">Save the date</h1>
-      <p class="font-serif text-3xl lg:text-6xl text-center">
+      <h1 class="text-lg md:text-2xl lg:mb-4 text-center">
+        A festival of words & thought
+      </h1>
+      <p class="font-serif text-3xl md:text-4xl lg:text-5xl text-center">
         Sat 14th to Sun 22nd June
       </p>
     </div>

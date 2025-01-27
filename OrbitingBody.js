@@ -42,7 +42,9 @@ export class OrbitingBody {
     if (this.posY < 0) {
       ctx.fillStyle = `rgba(${this.color}, ${1 - -this.posY / this.rMinor})`;
     } else {
-      ctx.fillStyle = `rgba(${this.color},1)`;
+      ctx.fillStyle = `rgba(${this.color}, ${1 - this.posY / this.rMinor})`;
+
+      // ctx.fillStyle = `rgba(${this.color},1)`;
     }
 
     ctx.fill();
